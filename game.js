@@ -1,0 +1,3 @@
+function computerPlay () (
+    let scissors = ""
+)
