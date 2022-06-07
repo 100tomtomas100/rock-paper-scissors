@@ -14,7 +14,7 @@ function computerPlay() {
 }
 
 let computer = computerPlay();
-console.log(computer)
+
 
 function outcome(call, call2) {
     if (call === call2) {
@@ -35,19 +35,32 @@ function outcome(call, call2) {
          return "TYPING ERROR"
      }
 } 
-console.log(outcome(pleasechoose(), computer));
-
 
 function game() {
    let human = 0;
    let computer = 0;
    let gamenr = 0;
-   for (let i = 0; i > 5; i++) {
-    if (outcome(pleasechoose(), computer));``
-    
+   for (let i = 1; i < 6; i++) {
+       let computer2 = computerPlay();
+       let human2 = pleasechoose();
+       let games = outcome(human2, computer2);       
+       computer3 = computer2.toUpperCase();       
+       human3 = human2.toUpperCase();
+       gamenr = i;
+       console.log(`ROUND ${gamenr}`);
+       console.log(`COMPUTER:${computer3} YOU:${human3}`);
+       console.log(games);   
+       console.log(" ");
+       if (games.slice(0, 9) == "YOU LOOSE") {
+           computer += 1;
+       } else if (games.slice(0, 7) == "YOU WIN") {
+           human += 1;
+       } else {
+           human += 0;
+       };
      
    }
-   return `GAME NR.${gamenr}  COMPUTER.${computer}  YOU.${human}`;
+   return `GAMES.${gamenr}  COMPUTER.${computer}  YOU.${human}`;
 }
-console.log(game());
 
+console.log(game());
