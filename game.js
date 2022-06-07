@@ -39,7 +39,7 @@ function outcome(call, call2) {
 function game() {
    let human = 0;
    let computer = 0;
-   let gamenr = 0;
+   let gamenr = 0;   
    for (let i = 1; i < 6; i++) {
        let computer2 = computerPlay();
        let human2 = pleasechoose();
@@ -57,10 +57,11 @@ function game() {
            human += 1;
        } else {
            human += 0;
-       };
+       }
      
    }
-   return `GAMES.${gamenr}  COMPUTER.${computer}  YOU.${human}`;
+   let tie = 5 - computer - human;
+   return `GAMES.${gamenr}  COMPUTER.${computer}  YOU.${human} TIE.${tie}`;
 }
 
 console.log(game());
