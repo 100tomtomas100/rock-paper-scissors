@@ -1,5 +1,5 @@
 function pleasechoose() { 
-    let humanChoice = prompt("Please choose ROCK, PAPER or SCISSORS"); 
+//    let humanChoice = prompt("Please choose ROCK, PAPER or SCISSORS"); 
     return humanChoice.toLowerCase();
 } 
 
@@ -65,3 +65,6 @@ function game() {
 }
 
 console.log(game());
+
+
+
