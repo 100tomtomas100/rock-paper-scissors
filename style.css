@@ -4,21 +4,23 @@ margin: 0;
 padding: 0;
 }
 body {
-background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    background-color:chocolate
 }
 #buttons {
-width: 100vw;
-height: 100vh;
-display:flex;
-align-items: center;
+    width: 100vw;
+    height: 40vh;
+    display: flex;
+    align-items: center;
 justify-content: space-evenly;
-background-color:chocolate
 
 }
 .button {
 width: 20vw;
 height: 35vh;
-
 display: flex;
 flex-direction: column;
 justify-content: center;
@@ -30,7 +32,6 @@ img {
    max-height: 90%;
    max-width: 100%;
    object-fit: contain;
-   
 }
 h3 {
     text-align: center;
@@ -39,4 +40,35 @@ h3 {
     color: white;
     padding-bottom: 2vh;
 }
+#upper {
+    height: 30vh;
+    max-width: 100vw;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 
+}
+
+.empty {
+    height: 3vh;
+}
+#para{
+    display: flex;
+    gap: 10vw;
+}
+#lower {
+    height: 30vh;
+    max-width: 100vw;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+#result {
+    display: flex;
+    gap: 10vw;
+    color: black;
+}
